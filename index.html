@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="js/scramble.js"></script>
     
   </head>
 
@@ -21,6 +22,15 @@
               <td style="padding:2.5%;width:63%;vertical-align:middle">
                 <p class="name" style="text-align: center;">
                   Soujatya Sarkar
+                </p>
+                <p align="center">
+                  <b>email</b>:&nbsp;
+                  <font id="email" style="display:inline;">soujatyasarkar@jcbose.ac.in</font>
+                  <script>
+                    emailScramble = new scrambledString(document.getElementById('email'),
+                         'emailScramble', 'soujatyasarkar@jcbose.ac.in',
+                         [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27]);
+                  </script>
                 </p>
                 <p>
                   I'm a Guest Researcher at <a href="http://www.jcbose.ac.in/home" target="_blank">Bose Institute</a>, Kolkata. I am  presently advised by <a href="https://www.thechatterjee.com" target="_blank">Prof. Subhrangshu Chatterjee</a> and I work on 3D molecular structure prediction from protein expressions.
